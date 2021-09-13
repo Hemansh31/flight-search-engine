@@ -1,0 +1,33 @@
+.CustomInput {
+    width: 90%;
+    margin: auto;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
+}
+.CustomInput label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.6rem;
+    font-weight: 700;
+}
+.CustomInput input {
+    height: 1.6rem;
+    border-radius: 3px;
+    border: 1px solid #979797;
+    padding: 5px 0;
+    padding-left: 5px;
+    font-size: 1.1rem;
+    display: block;
+    width: 98%;
+}
+.CustomInput .error {
+    color : red
+}
+@media only screen and (max-width : 1000px) {
+    .CustomInput {
+        width: 95%;
+        margin: auto;
+    }
+}

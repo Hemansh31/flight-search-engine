@@ -1,0 +1,28 @@
+.SearchForm {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    background-color: #b5ae00;
+    padding-top: 3%;
+    height: max-content;
+    padding-bottom: 5%;
+}
+.SearchForm .FormSubmit {
+    width: 90%;
+    margin: auto;
+    font-size: 1.1rem;
+    background-color: #024bb6;
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border: none;
+}
+@media only screen and (max-width : 1000px) {
+    .SearchForm {
+        width: 95%;
+    }
+    .SearchForm .FormSubmit {
+        width: 95%;
+    }
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.FlightCard {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: #f4f1bc;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.FlightCard .details {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.FlightCard .details .cost{
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-weight: 800;
+}
+
+.FlightCard .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-row-gap: 8%;
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.FlightCard .wrapper .one-way span, .FlightCard .wrapper .return span {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8%;
+}
+
+.FlightCard .banner {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    padding: 8% 0;
+}
+
+.FlightCard .banner .logo{
+   width: 78%;
+   height: auto;
+   margin: auto;
+   border-radius: 10%;
+}
+
+.FlightCard .banner .btn {
+    margin: auto;
+    font-size: 1.1rem;
+    background-color: #024bb6;
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 1000px) and (min-width : 700px) {
+    .FlightCard {
+        grid-template-columns: 1fr;
+    }
+    .FlightCard .banner{
+        padding-top: 1%;
+        padding-bottom: 4%;
+    }
+    .FlightCard .banner .logo {
+        display: none;
+    }
+    .FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
+        display: grid;
+        grid-template-rows: min-content min-content min-content min-content;
+        grid-row-gap: 4%;
+        text-align: left;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .FlightCard {
+        grid-template-columns: 1fr;
+    }
+    .FlightCard .banner{
+        padding-top: 1%;
+        padding-bottom: 4%;
+    }
+    .FlightCard .banner .logo {
+        display: none;
+    }
+    .FlightCard .wrapper {
+        display: block;
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; */
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+    }
+    .FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        grid-row-gap: 10%;
+        text-align: left;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
