@@ -8,8 +8,6 @@ export const Content = (props) => {
 
     const searchResults = useSelector(state => state.search);
 
-    console.log(searchResults);
-
     let flightList = null;
 
     if((searchResults.isFilterActive && searchResults.filteredData.length === 0) || searchResults.data.length === 0) {

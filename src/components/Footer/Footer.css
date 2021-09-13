@@ -13,3 +13,8 @@
     grid-template-columns: 2rem 1fr;
     line-height: 1;
 }
+@media only screen and (max-width : 1000px) {
+    .Footer {
+        display: none;
+    }
+}

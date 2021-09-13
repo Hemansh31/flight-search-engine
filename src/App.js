@@ -6,8 +6,6 @@ import { useSelector } from 'react-redux';
 import { Content } from './components/Content/Content';
 
 function App() {
-  const flights = useSelector(state => state);
-  console.log(flights);
   return (
     <div className='App'>
       <Header />
