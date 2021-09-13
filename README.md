@@ -44,7 +44,7 @@ npm install
 ```
 ### 2. Run the create-react-app development server
 ```
- npm run start
+ npm start
 ```
 ### 3. Run local deployment
 ```
