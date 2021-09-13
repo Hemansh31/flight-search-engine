@@ -10,42 +10,44 @@
 }
 
 .FlightCard .details {
-    display: grid;
-    grid-template-rows: min-content 1fr;
     overflow: hidden;
     font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
 }
 
 .FlightCard .details .cost{
     font-size: 1.8rem;
     text-align: left;
-    margin-left: 5%;
-    margin-top: 4%;
+    margin-left: 4%;
+    margin-top: 3%;
     font-weight: 800;
 }
 
 .FlightCard .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: visible;
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     height: 100%;
 }
 
 .FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
-    display: grid;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-row-gap: 8%;
+    /* display: grid; */
+    /* grid-template-rows: min-content min-content min-content min-content; */
+    /* grid-row-gap: 8%; */
     text-align: left;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    /* padding-top: 4%;
+    padding-bottom: 4%; */
+    overflow: visible;
+    height: 90%;
 }
 
-.FlightCard .wrapper .one-way span, .FlightCard .wrapper .return span {
-    margin-top: auto;
-    margin-bottom: auto;
+.FlightCard .wrapper .one-way div, .FlightCard .wrapper .return div {
+    margin-top: 3%;
+    margin-bottom: 3%;
     margin-left: 8%;
 }
 
@@ -77,22 +79,36 @@
 
 @media only screen and (max-width : 1000px) and (min-width : 700px) {
     .FlightCard {
-        grid-template-columns: 1fr;
+        display: block;
     }
     .FlightCard .banner{
         padding-top: 1%;
         padding-bottom: 4%;
     }
+    .FlightCard .banner {
+        display: block;
+        padding-bottom: 2%;
+    }
     .FlightCard .banner .logo {
         display: none;
     }
+    .FlightCard .wrapper {
+        height: max-content;
+    }
+    .FlightCard .details {
+        display: block;
+        height: max-content;
+    }
     .FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
-        display: grid;
-        grid-template-rows: min-content min-content min-content min-content;
-        grid-row-gap: 4%;
-        text-align: left;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        margin-top: 3%;
+    }
+    .FlightCard .wrapper .one-way div, .FlightCard .wrapper .return div {
+        margin-top: 2%;
+        margin-left: 8%;
+        margin-bottom: 2%;
+    }
+    .FlightCard .banner .btn {
+        margin-top: 0%;
     }
 }
 
@@ -107,22 +123,31 @@
     .FlightCard .banner .logo {
         display: none;
     }
+    .FlightCard .details {
+        display: block;
+        height: max-content;
+    }
     .FlightCard .wrapper {
         display: block;
         /* grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr; */
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: visible;
         font-family: 'Ubuntu', sans-serif;
         width: 100%;
+        height: max-content;
     }
     .FlightCard .wrapper .one-way,.FlightCard .wrapper .return {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: min-content min-content;
-        grid-row-gap: 10%;
+        grid-row-gap: 8%;
         text-align: left;
         padding-top: 5%;
         padding-bottom: 5%;
+        height: max-content;
+    }
+    .FlightCard .wrapper .one-way div, .FlightCard .wrapper .return div {
+        margin: auto;
+        margin-left: 8%;
     }
 }

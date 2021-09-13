@@ -16,19 +16,19 @@ export const FlightCard = (props) => {
     return (
         <div className = 'FlightCard'>
             <div className = 'details'>
-                <span className = 'cost'>&#x20b9; {getFlightPrice(props.payload)}</span>
+                <div className = 'cost'>&#x20b9; {getFlightPrice(props.payload)}</div>
                 <div className = 'wrapper'>
                     {props.payload.dep && <div className = 'one-way'>
-                        <span style = {{fontSize : '1rem'}}>{props.payload.dep.airlineId}</span>
-                        <span style = {{fontSize : '1.5rem', fontWeight : 500}}>{props.payload.dep.sourceCityId} {'>'} {props.payload.dep.destCityId}</span>
-                        <span style = {{fontSize : '1.2rem'}}>Depart : {getTime(props.payload.dep.scheduledDeparture)} </span>
-                        <span style = {{fontSize : '1.2rem'}}>Arrive : {getTime(props.payload.dep.scheduledArrival)}</span>
+                        <div style = {{fontSize : '1rem'}}>{props.payload.dep.airlineId}</div>
+                        <div style = {{fontSize : '1.5rem', fontWeight : 500}}>{props.payload.dep.sourceCityId} {'>'} {props.payload.dep.destCityId}</div>
+                        <div style = {{fontSize : '1.2rem'}}>Depart : {getTime(props.payload.dep.scheduledDeparture)} </div>
+                        <div style = {{fontSize : '1.2rem'}}>Arrive : {getTime(props.payload.dep.scheduledArrival)}</div>
                     </div>}
                     {props.payload.ret && <div className = 'return'>
-                        <span style = {{fontSize : '1rem'}}>{props.payload.ret.airlineId}</span>
-                        <span style = {{fontSize : '1.5rem', fontWeight : 500}}>{props.payload.ret.sourceCityId} {'>'} {props.payload.ret.destCityId}</span>
-                        <span style = {{fontSize : '1.2rem'}}>Depart : {getTime(props.payload.ret.scheduledDeparture)}</span>
-                        <span style = {{fontSize : '1.2rem'}}>Arrive : {getTime(props.payload.ret.scheduledArrival)}</span>
+                        <div style = {{fontSize : '1rem'}}>{props.payload.ret.airlineId}</div>
+                        <div style = {{fontSize : '1.5rem', fontWeight : 500}}>{props.payload.ret.sourceCityId} {'>'} {props.payload.ret.destCityId}</div>
+                        <div style = {{fontSize : '1.2rem'}}>Depart : {getTime(props.payload.ret.scheduledDeparture)}</div>
+                        <div style = {{fontSize : '1.2rem'}}>Arrive : {getTime(props.payload.ret.scheduledArrival)}</div>
                     </div>}
                 </div>
                 
