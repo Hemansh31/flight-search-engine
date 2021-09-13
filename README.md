@@ -1,9 +1,7 @@
 # Flight Search Engine
 
 ## Description
-A responsive web test project using react, redux, express, material-icons.
-
-This project does not use libraries such as jquery, bootstrap.
+A responsive web test project using react, redux, express, HTML, CSS, JavaScript.
 
 ### Requirement:
 node : 16.x.x or above 
@@ -12,7 +10,7 @@ npm : 7.x.x or above
 ### Data used for flights:
 There is a file called flight.json inside 
 ```
-cd ~/<root-dir>/src/utils/
+cd ~/<project-dir>/src/utils/
 ```
 This file contains mockup data used to perform search on flights.
 Please refer to this file for making search query otherwise empty results will be shown.
